@@ -1,9 +1,9 @@
 <template>
   <div class="tableContent">
     <div class="operBtn">
-      <el-button @click="transform">转单</el-button>
-      <el-button type="primary">结算</el-button>
-      <el-button type="text">产生逆向交易</el-button>
+      <el-button @click="transform">1111111</el-button>
+      <el-button type="primary">22222222</el-button>
+      <el-button type="text">33333333</el-button>
     </div>
     <el-table
       ref="multipleTable"
@@ -24,29 +24,7 @@
         width="120" prop="id">
       </el-table-column>
 
-      <el-table-column 
-        :label="this.$i18n.t('transaction.tableContent.gmtCreate')"
-        width="120">
-        <template scope="scope">{{ scope.row.gmtCreate | formateDate }}</template>
-      </el-table-column>
-
-      <el-table-column
-        :label="this.$i18n.t('transaction.tableContent.gmtModified')"
-        width="120">
-        <template scope="scope">{{ scope.row.gmtModified }}</template>
-      </el-table-column>
-
-      <el-table-column
-        :label="this.$i18n.t('transaction.tableContent.modifier')"
-        width="120">
-        <template scope="scope">{{ scope.row.modifier }}</template>
-      </el-table-column>
-
-      <el-table-column
-        :label="this.$i18n.t('transaction.tableContent.username')"
-        width="120">
-        <template scope="scope">{{ scope.row.username }}</template>
-      </el-table-column>
+       
 
       <el-table-column
         prop="password"
@@ -60,15 +38,7 @@
         show-overflow-tooltip>
       </el-table-column>
 
-      <el-table-column
-        fixed="right"
-        :label="this.$i18n.t('transaction.tableContent.operate')"
-        width="120">
-        <template scope="scope">
-          <el-button @click="handleDelete(scope.$index, scope.row)" type="text" size="small">{{$t("transaction.tableContent.deleteBtn")}}</el-button>
-          <el-button @click="handleUpdate(scope.$index, scope.row)" type="text" size="small">{{$t("transaction.tableContent.updateBtn")}}</el-button>
-        </template>
-      </el-table-column>
+      
 
     </el-table>
     <div class="pager">

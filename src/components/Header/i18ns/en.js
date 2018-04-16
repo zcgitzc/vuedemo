@@ -1,9 +1,9 @@
 export const header = {
     home: 'Home',
-    transaction: 'Transaction',
-    settlement: 'Settlement',
-    dataManagement: 'DataManagement',
-    business: 'Business',
-    product: 'Product',
-    customValue: 'CustomValue',
+    transaction: 'A',
+    settlement: 'B',
+    dataManagement: 'C',
+    business: 'D',
+    product: 'E',
+    customValue: 'F',
 }

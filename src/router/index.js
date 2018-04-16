@@ -21,27 +21,27 @@ export const routes = [{
     component: About
 }, {
     path: '/transaction',
-    name: '交易管理',
+    name: 'A',
     component: Transaction
 }, {
     path: '/settlement',
-    name: '结算单管理',
+    name: 'B',
     component: Settlement
 }, {
     path: '/dataManagement',
-    name: '数据维护',
+    name: 'C',
     component: DataManagement,
     children: [{
         path: 'business',
-        name: '业务场景维护',
+        name: 'D',
         component: Business
     }, {
         path: 'product',
-        name: '产品维护',
+        name: 'E',
         component: Product
     }, {
         path: 'customValue',
-        name: '统一值列表维护',
+        name: 'F',
         component: CustomValue
     }]
 }];
